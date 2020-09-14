@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_BeaconDefinition">
+      <Id>
+        <TypeId>Beacon</TypeId>
+        <SubtypeId>JumpInhibitor</SubtypeId>
+      </Id>
+      <DisplayName>Jump Drive Inhibitor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HyperdriveCore.dds</Icon>
+      <Description>Jump Drive Inhibitor prevents jump drives from functioning within it's range.</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Hyperdrive Core New.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="120" />
+        <Component Subtype="MetalGrid" Count="75" />
+        <Component Subtype="GravityGenerator" Count="30" />
+        <Component Subtype="Detector" Count="30" />
+        <Component Subtype="PowerCell" Count="180" />
+        <Component Subtype="Superconductor" Count="2000" />
+        <Component Subtype="Computer" Count="450" />
+        <Component Subtype="Construction" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Hyperdrive Core New_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.67" File="Models\Hyperdrive Core New_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Hyperdrive Core New_Constr3.mwm" />
+      </BuildProgressModels>
+	    <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BlockPairName>Jump Drive Inhibitor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>180</BuildTimeSeconds>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+
+      <MaxBroadcastRadius>5000</MaxBroadcastRadius>
+      <Flare>BeaconLarge</Flare>
+      <MaxBroadcastPowerDrainkW>50000</MaxBroadcastPowerDrainkW>
+
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <DestroyEffect>Explosion_Warhead_30</DestroyEffect>
+      <DestroySound>WepLrgWarheadExpl</DestroySound>
+      <PCU>400</PCU>
+      <IsAirTight>true</IsAirTight>
+    </Definition>
+  </CubeBlocks>
+</Definitions>

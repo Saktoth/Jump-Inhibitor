@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId />
+      </Id>
+      <DisplayName>Jump Drive Inhibitor</DisplayName>
+      <Name>Jump Drive Inhibitor</Name>
+      <ItemIds>
+        <string>Jump Drive Inhibitor</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>
